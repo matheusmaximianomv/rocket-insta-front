@@ -7,7 +7,7 @@ import './header.css';
 
 import logo from './../../assets/img/logo.svg';
 import camera from './../../assets/img/camera.svg';
-import user from './../../assets/img/icons insta.svg'
+import user from './../../assets/img/icons_insta.png'
 import logout_icon from './../../assets/img/logout.png'
 
 export default class Header extends Component {
