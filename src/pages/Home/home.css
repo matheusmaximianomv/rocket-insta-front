@@ -1,0 +1,121 @@
+footer#main-footer {
+    background: #fff;
+    height: 72px;
+    border-top: 1px solid #DDD;
+}
+
+footer#main-footer .footer-content {
+    width: 100%;
+    max-width: 980px;
+    margin : 0 auto;
+    height: 72px;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer#main-footer .footer-content p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: #003569;
+}
+
+footer#main-footer .footer-content p a {
+    text-decoration: none;
+    color:#999;
+}
+
+section.main-section {
+    width: 90%;
+    max-width: 360px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #ddd;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main-section img {
+    width: 80%;
+    height: 50px;
+    margin: 20px auto 20px; 
+
+}
+
+section.main-section p {
+    margin: 0 40px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    color: #999;
+}
+
+section.main-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+section.main-section input {
+    margin-bottom: 10px;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    font-size: 14px;   
+}
+
+section.main-section span {
+    color: red;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+}
+
+section.main-section span.success {
+    color: green !important;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+}
+
+section.main-section button {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 0;
+    background: #7159c1;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section.main-section button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+section.info {
+    width: 90%;
+    max-width: 360px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+section.info p span {
+    color: #7159c1;
+    font-weight: bold;
+    cursor: pointer;
+}

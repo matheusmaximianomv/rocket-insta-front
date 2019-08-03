@@ -1,0 +1,67 @@
+form#profile {
+    width: 90%;
+    max-width: 480px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form#profile div {
+    background-color: #aaa;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+form#profile div img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+form#profile input[type=file] {
+    margin: 0 auto 15px;
+    width: 70%;
+}
+
+form#profile input {
+    margin-bottom: 15px;
+}
+
+form#profile input[type=text] {
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    font-size: 14px;
+}
+  
+form#profile span {
+    color: red;
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+}
+  
+form#profile button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 0;
+    background: #7159c1;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form#profile button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
