@@ -13,7 +13,19 @@ form#new-post {
 form#new-post input {
   margin-bottom: 10px;
 }
-  
+
+form#new-post img {
+  height: 400px;
+  width: 80%;
+  border-radius: 8px;
+  margin: 0 auto 10px;
+}
+
+form#new-post input[type=file] {
+  width: 120px;
+  margin: 0 auto 10px;
+}
+
 form#new-post input[type=text] {
   height: 38px;
   border-radius: 4px;

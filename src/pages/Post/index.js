@@ -10,6 +10,7 @@ export default class Post extends Component {
 
     state = {
         image: null,
+        urlImage: '',
         place: '',
         description: '',
         hashtags: '',
@@ -21,7 +22,7 @@ export default class Post extends Component {
         const file = event.target.files[0];
         const fileType = file.type.split('/')[0];
         if (fileType === "image")
-            this.setState({ image: file });
+            this.setState({ image: file, urlImage : URL.createObjectURL(file) });
         else
             this.setState({ image: null, error: true, errorMessage: "Tipo de Arquivo não suportado." });
     }
@@ -61,13 +62,14 @@ export default class Post extends Component {
 
     render() {
 
-        const { error, errorMessage } = this.state;
+        const { error, errorMessage, urlImage } = this.state;
 
         return (
             <div>
                 <Header />
                 <form id="new-post" onSubmit={this.handleSubmit}>
-                    <input type="file" name="image" onChange={this.handleImageChange} />
+                    {urlImage ? <img src={urlImage} alt="Pre-visualização da imagem" /> : null }
+                    <input type="file" name="image" onChange={this.handleImageChange} accept="image/*" />
                     <input type="text" name="place" placeholder="Local da Postagem" onChange={this.handleChange} />
                     <input type="text" name="description" placeholder="Descrição da Postagem" onChange={this.handleChange} />
                     <input type="text" name="hashtags" placeholder="Hashtags" onChange={this.handleChange} />
