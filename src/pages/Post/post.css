@@ -22,7 +22,7 @@ form#new-post img {
 }
 
 form#new-post input[type=file] {
-  width: 120px;
+  width: 115px;
   margin: 0 auto 10px;
 }
 
